@@ -60,7 +60,7 @@ def merge_all_data(user_health_data_csv,supplement_usage_csv,experiments_csv,use
 
     final_df = merged_df[['user_id', 'date', 'email', 'user_age_group', 'name', 'supplement_name', 'dosage_grams', 'is_placebo', 'average_heart_rate', 'average_glucose', 'sleep_hours', 'activity_level']]
     final_df = final_df.rename(columns={'name': 'experiment_name'})
-    print (final_df.head())
+    #print (final_df.head())
 
     return final_df
 
